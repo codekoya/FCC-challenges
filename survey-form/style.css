@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body{
+  background-color: #ffe099;
+  text-align: center;
+}
+.header {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+#title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px; 
+  color: #47a673;
+}
+
+#description, select, p{
+  font-family: 'Roboto', sans-serif;
+}
+fieldset {
+  border: hidden;
+  letter-spacing: 0.5px;
+}
+#survey-form {
+  display: inline-block;  
+  width: 40%;
+}
+input, label{ 
+    outline: none;
+}
+label{
+  text-align:left;
+  padding-bottom: 5px;
+  display: block;
+	font-family: 'Roboto';
+  font-size: 18px;
+  color: gray;
+  margin-bottom: 5px;
+}
+input, select{
+  display: block;
+	width: 100%;
+	overflow: hidden;
+  background: transparent;
+  border: none; 
+  border-bottom: 2px solid gray;
+}
+
+input:focus{
+  border-color: black;
+}
+
+select{
+  height: 30px;
+  background-color: #ffe099;
+  border: 2px solid #bd922f;
+  color: #47a673;
+  padding: 2px;
+}
+.labels{
+  text-align:left;
+  font-family: 'Roboto';
+  font-size: 18px;
+  color: gray;
+  padding-bottom: 5px;
+}
+.input-radio,
+.input-checkbox{
+  display: inline-block;
+	width: auto;
+	margin: 0px 10px 0 5px;
+}
+[type="radio"],
+[type="checkbox"]{
+  display: inline-block;
+  appearance: none;
+  height: 15px;
+	width: 15px;
+  border: 2px solid #47a673;
+  transition: all 0.15s ease-out 0s;
+}
+[type="radio"]{
+  border-radius: 50%;
+}
+[type="radio"]:focus,
+[type="radio"]:focus{
+  background-color:#47a673;
+  border: 1px solid #47a673;
+}
+
+textarea{
+  resize: none;
+  padding: 10px 10px 0px 20px;
+	width: 100%;
+	height: 90px;
+  border: 2px solid white;
+  background-color: #ffe099;
+}
+.btn{
+  display: inline-block;
+  width: 50%;
+  height: 40px;
+  border: 3px solid #47a673;
+  background-color: #ffe099;
+  font-family: 'Montserrat'; 
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #47a673;
+  font-size: 20px;
+  margin-top: 10px;
+  transition: all .2s ease-out;
+}
+.btn:hover{
+  background-color:#47a673;
+  color:#ffe099;
+}

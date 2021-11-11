@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - FCC - Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="header">
+    <h1 id="title"> SURVEY FORM </h1>
+    <p id="description"> Help us improve our platform.</p>
+  </div>
+  <form id="survey-form">
+    <fieldset>
+      <label for="name" id="name-label">Name*</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    </fieldset>
+    <fieldset>
+      <label for="email" id="email-label">Email*</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </fieldset>
+    <fieldset>
+      <label for="number" id="number-label">Age*</label>
+      <input type="number" id="number" name="age" min="10" max="100" placeholder="Age" required>
+    </fieldset>
+    <fieldset>
+      <label for="dropdown">Which option best describes your current role?* </label>
+      <select id="dropdown" name="dropdown">
+        <option value="student" selected>Student</option>
+        <option value="fLJob" >Full Time Job</option>
+        <option value="fLLearner" >Full Time Job</option>
+        <option value="pNs" >Prefer not to say</option>
+        <option value="other" >Other</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <p class="labels"> Would you recommend FreeCodeCamp to a friend?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely</label
+      >
+      </label>
+    <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label
+      >
+      </label>
+  <label>
+        <input
+          name="user-recommend"
+          value="no"
+          type="radio"
+          class="input-radio"
+        />No</label
+      >
+      </label>
+    </fieldset>
+    <fieldset>
+      <p class="labels"> Things that should be improved in the future:</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="feProjects"
+          type="checkbox"
+          class="input-checkbox"
+        />Front-end projects
+      </label>
+      <label>
+        <input
+          name="user-recommend"
+          value="beProjects"
+          type="checkbox"
+          class="input-checkbox"
+        />Back-end projects
+      </label>
+      <label>
+        <input
+          name="user-recommend"
+          value="dataViz"
+          type="checkbox"
+          class="input-checkbox"
+        />Data Vizualization
+      </label>
+      <label>
+        <input
+          name="user-recommend"
+          value="chl"
+          type="checkbox"
+          class="input-checkbox"
+        />Challenges
+      </label>
+      <label>
+        <input
+          name="user-recommend"
+          value="openSource"
+          type="checkbox"
+          class="input-checkbox"
+        />Open source community
+      </label>
+      <label>
+        <input
+          name="user-recommend"
+          value="gitterHR"
+          type="checkbox"
+          class="input-checkbox"
+        />Gitter help rooms
+      </label>
+      <label>
+        <input
+          name="user-recommend"
+          value="videos"
+          type="checkbox"
+          class="input-checkbox"
+        />Videos
+      </label>
+      <label>
+        <input
+          name="user-recommend"
+          value="citymeet"
+          type="checkbox"
+          class="input-checkbox"
+        />City meetups
+      </label>
+      <label>
+        <input
+          name="user-recommend"
+          value="wiki"
+          type="checkbox"
+          class="input-checkbox"
+        />Wiki
+      </label>
+      <label>
+        <input
+          name="user-recommend"
+          value="forum"
+          type="checkbox"
+          class="input-checkbox"
+        />Forum
+      </label>
+      <label>
+        <input
+          name="user-recommend"
+          value="addCourses"
+          type="checkbox"
+          class="input-checkbox"
+        />Additional Courses
+      </label>
+    </fieldset>
+    <fieldset>
+      <p class="labels">Any suggestions?</p>
+      <textarea id="survey-form-suggestions" maxlength="194"></textarea>
+    </fieldset>
+  <button id="submit" type="submit"       class="btn">Submit the form  
+	</button>
+  </form>
+</div>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+</body>
+</html>
